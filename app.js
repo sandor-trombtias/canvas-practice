@@ -1,4 +1,4 @@
-require('./style.scss');
+require('./styles/style.scss');
 
 var canvas = document.querySelector('canvas');
 canvas.width = document.documentElement.clientWidth - 2;
