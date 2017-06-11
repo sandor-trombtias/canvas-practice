@@ -1,5 +1,7 @@
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+
 module.exports = {
-  entry: './app.js',
+  entry: './src/app.js',
   output: {
     filename: './dist/bundle.js'
   },
@@ -31,5 +33,12 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3000,
+      server: { baseDir: ['dist'] }
+    })
+  ]
 }

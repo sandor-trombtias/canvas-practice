@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "browser-sync": "^2.18.12",
     "css-loader": "^0.28.4",
     "jshint": "^2.9.4",
     "jshint-loader": "^0.8.4",
@@ -11,6 +12,7 @@
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.5.2"
+    "babel-preset-env": "^1.5.2",
+    "browser-sync-webpack-plugin": "^1.1.4"
   }
 }
